@@ -1,0 +1,45 @@
+# =========================================================================
+# DATA & DATABASE FILES (Prevents huge file errors)
+# =========================================================================
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+
+# Lab data files (.csv, .xlsx, .sql, .json) ARE tracked on purpose
+
+# Ignore entire data directories if you create them later
+data/
+datasets/
+
+# =========================================================================
+# SECRETS & CREDENTIALS (Prevents API keys and DB passwords leaking)
+# =========================================================================
+.env
+.env.local
+.env.*.local
+config.ini
+secrets.py
+credentials.json
+*.pem
+*.key
+*credential*
+*.dist
+
+# =========================================================================
+# OPERATING SYSTEM & IDE FILES
+# =========================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =========================================================================
+# PROGRAMMING RUNTIMES (Python / Node / etc.)
+# =========================================================================
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+node_modules/
